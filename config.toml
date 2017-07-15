@@ -14,8 +14,8 @@ uglyurls = true
     tagline = "Mariage S&R"
     author = "Ségolène et Raphaël"
     description = "Nous nous marions et sommes heureux d'"
-    logoBig = "/images/osprey-logo.png"
-    logoSmall = "/images/osprey-logo.png"
+    logoBig = "/images/initiales_filigrane.png"
+    logoSmall = "/images/initiales_filigrane.png"
     favicon = "favicon.ico"
     opengraphImage = "/images/osprey.png"
     twitter = "TomaNistor"
@@ -39,14 +39,18 @@ uglyurls = true
     url  = "/#about"
     weight = 1
 [[menu.main]]
-    name = "Work"
-    url  = "/#work"
-    weight = 2
-[[menu.main]]
     name = "Blog"
     url  = "/#blog"
+    weight = 2
+[[menu.main]]
+    name = "Work"
+    url  = "/#work"
     weight = 3
+[[menu.main]]
+    name = "Logistique"
+    url  = "/#logistique"
+    weight = 4
 [[menu.main]]
     name = "Contact"
     url  = "/#contact"
-    weight = 4
+    weight = 5
