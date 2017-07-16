@@ -39,10 +39,10 @@ uglyurls = true
     name = "Nous"
     url  = "/#about"
     weight = 1
-[[menu.main]]
-    name = "Blog"
-    url  = "/#blog"
-    weight = 2
+#[[menu.main]]
+#    name = "Blog"
+#    url  = "/#blog"
+#    weight = 2
 [[menu.main]]
     name = "Gallerie"
     url  = "/#gallery"
