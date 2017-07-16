@@ -35,7 +35,7 @@ uglyurls = true
     gallery = "/" # Redirect gallery index to home page
 
 [[menu.main]]
-    name = "About"
+    name = "Nous"
     url  = "/#about"
     weight = 1
 [[menu.main]]
@@ -43,8 +43,8 @@ uglyurls = true
     url  = "/#blog"
     weight = 2
 [[menu.main]]
-    name = "Work"
-    url  = "/#work"
+    name = "Gallerie"
+    url  = "/#gallery"
     weight = 3
 [[menu.main]]
     name = "Logistique"
