@@ -13,7 +13,7 @@ date = "2017-07-15"
     </div>
     <div class="col-md-8">
         <div class="box">
-          {{< google-maps key="AIzaSyCfpRkrg1lIKKgsFC5zJnzBspE8a6Ee2Rg" height="300" location="5 avenue Marcel Houel 69200 Vénissieux" >}}
+          {{< google-maps key="" height="300" location="5 avenue Marcel Houel 69200 Vénissieux" >}}
         </div>
     </div>
 </div>
@@ -23,7 +23,7 @@ date = "2017-07-15"
 <div class="row middle-xs">
     <div class="col-md-8">
         <div class="box">
-          {{< google-maps key="AIzaSyCfpRkrg1lIKKgsFC5zJnzBspE8a6Ee2Rg" height="300" location="105 route des Sources 69640 Denicé" >}}
+          {{< google-maps key="" height="300" location="105 route des Sources 69640 Denicé" >}}
         </div>
     </div>
     <div class="col-xs-4">
@@ -65,12 +65,12 @@ Voici une sélection d'options pour vous loger après la fête.
 Pensez à réserver !
 
 <div class="row middle-xs">
-    <div class="col-md-8">
+    <div class="col-md-6">
         <div class="box">
           <img class="circular--square" src="/images/l_arbre.png" />
         </div>
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-6">
         <div class="box">
             <p>Nous vous piquerons vos clefs à l'arrivée, si l'aclotest n'est pas bon lors de votre départ, nous vous attacherons à cet arbre !</p>
             <p>Il sera possible de disposer d'une navette sur place qui vous accompagnera aux logements alentours pour 30€ pour 9 personnes.</p>

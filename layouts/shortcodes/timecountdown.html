@@ -1,0 +1,11 @@
+<div class="shortcode shortcode--timecountup">
+	<div id="{{ .Get 4 }}"></div>
+		<script type="text/javascript">
+		$("#{{ .Get 4 }}")
+		.countdown("{{ .Get 0 }}/{{ .Get 1 }}/{{ .Get 2 }}", function(event) {
+			$(this).text(
+				event.strftime('%D days %H:%M:%S')
+			);
+		});
+	</script>
+</div>

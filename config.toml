@@ -30,6 +30,7 @@ uglyurls = true
     cacheBustCSS = false
     cacheBustJS = false
     ajaxFormspree = true
+    googleMapsAPIKey = "AIzaSyCfpRkrg1lIKKgsFC5zJnzBspE8a6Ee2Rg"
 
 [permalinks]
     gallery = "/" # Redirect gallery index to home page
@@ -51,6 +52,6 @@ uglyurls = true
     url  = "/#logistique"
     weight = 4
 [[menu.main]]
-    name = "Contact"
+    name = "Discutons"
     url  = "/#contact"
     weight = 5

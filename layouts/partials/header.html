@@ -75,6 +75,10 @@
         {{ if .Site.Params.customCSS }}{{ partial "css.html" . }}{{ end }}
         {{ if .Site.Params.highlightJS }}<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/github.min.css">{{ end }}
         {{ if .Site.GoogleAnalytics }}{{ template "_internal/google_analytics.html" . }}{{ end }}
+
+        <script src="//code.jquery.com/jquery.js"></script>
+        <script src="/scripts/jquery.countdown.js"></script>
+        <script src="/scripts/jquery.tinytimer.min.js"></script>
     </head>
 
     <body>

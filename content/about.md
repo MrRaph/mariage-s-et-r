@@ -1,15 +1,10 @@
 +++
-title = "About"
+title = "Nous"
 date = "2017-06-27T17:39:21-07:00"
 draft = false
 +++
 
-## Welcome to the Osprey Theme
+## Le mot du Marié
 
-To create an about section, generate an about.md file in your content folder by doing:
 
-```console
-$ hugo new about.md
-```
-
-Then add your own content to the markdown file. Everything in the file will be generated to show here on the home page.
+Ma chérie, cela fait maintenant {{% timecountup "2013" "04" "05" %}} que tu es entré avec fracas dans ma vie de célibataire endurci.

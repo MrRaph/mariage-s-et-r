@@ -1,0 +1,5 @@
+<span class="home-countdown-example" id="getting-started"></span>
+<script type="text/javascript">
+		var d = new Date('{{ .Get 0 }}/{{ .Get 1 }}/{{ .Get 2 }}');
+		$('#getting-started').tinyTimer({ from: d, format: '%d jours %h heures et %m minutes' });
+</script>
