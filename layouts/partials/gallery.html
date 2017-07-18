@@ -8,7 +8,7 @@
             {{ if modBool $galleryTotal 1 }}
                 {{ range first 3 (where .Site.RegularPages.Reverse "Section" "gallery") }}
                     <div class="col-xs-12 col-md-4" {{ if .Params.color }}style="background-color:{{ .Params.color }}"{{ end }}>
-                        <img src="/images/{{ .Params.image}}" {{ if .Params.alt }}alt="{{ .Params.alt }}"{{ end }}>
+                        <img class="circular--square" src="/images/{{ .Params.image}}" {{ if .Params.alt }}alt="{{ .Params.alt }}"{{ end }}>
                         <div class="row middle-xs center-xs overlay">
                             <div class="col-xs-12">
                                 <h2>{{ .Title }}</h2>
@@ -32,7 +32,7 @@
                     {{ if modBool $galleryTotal 2 }}col-lg-4{{ end }}
                 {{ end }}
             {{ end }}" {{ if .Params.color }}style="background-color:{{ .Params.color }}"{{ end }}>
-                <img src="/images/{{ .Params.image}}" {{ if .Params.alt }}alt="{{ .Params.alt }}"{{ end }}>
+                <img class="circular--square" src="/images/{{ .Params.image}}" {{ if .Params.alt }}alt="{{ .Params.alt }}"{{ end }}>
                 <div class="row middle-xs center-xs overlay">
                     <div class="col-xs-12">
                         <h2>{{ .Title }}</h2>
