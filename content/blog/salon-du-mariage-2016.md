@@ -12,7 +12,7 @@ Cet après-midi nous a permis de nous immerger complètement dans le monde du ma
 Le plus important cependant est que nous avons rencontré notre photographe !! Le courant est très bien passé entre nous et ce qui est sûr, c'est que nous aurons des photos géniales de notre mariage !
 
 
-Ah oui, on a aussi bien amusés avec un truc trop cool !! Je vous laisse en juger ! :p
+Ah oui, on s'est aussi bien amusés avec un truc trop cool !! Je vous laisse en juger ! :p
 
 ![PhotoBooth Mariés](/images/IMG_0020.jpg)
 
