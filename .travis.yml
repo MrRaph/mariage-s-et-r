@@ -5,6 +5,9 @@ script:
   - python --version
   - sudo pip install s3cmd awscli
   - s3cmd sync --delete-removed -P -M -r public/ s3://mariage-s-et-r.fr/
+  - mkdir ~/.aws
+  - echo "[preview]" > ~/.aws/config
+  - echo "cloudfront = true" >> ~/.aws/config
   - aws cloudfront create-invalidation --distribution-id E13N12K0DVITI9 --paths "/*"
 notifications:
     email:
