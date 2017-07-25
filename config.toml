@@ -44,7 +44,7 @@ uglyurls = true
 #    url  = "/#blog"
 #    weight = 2
 [[menu.main]]
-    name = "Galerie"
+    name = "Articles"
     url  = "/#gallery"
     weight = 3
 [[menu.main]]
