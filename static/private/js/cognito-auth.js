@@ -52,14 +52,24 @@ var WebApp = window.WebApp || {};
      * Cognito User Pool functions
      */
 
-    function register(email, password, onSuccess, onFailure) {
+    function register(email, password, name, family_name, onSuccess, onFailure) {
         var dataEmail = {
             Name: 'email',
             Value: email
         };
+        var dataName = {
+            Name: 'name',
+            Value: name
+        };
+        var dataFamilyName = {
+            Name: 'family_name',
+            Value: family_name
+        };
         var attributeEmail = new AmazonCognitoIdentity.CognitoUserAttribute(dataEmail);
+        var attributeName = new AmazonCognitoIdentity.CognitoUserAttribute(dataName);
+        var attributeFamilyName = new AmazonCognitoIdentity.CognitoUserAttribute(dataFamilyName);
 
-        userPool.signUp(toUsername(email), password, [attributeEmail], null,
+        userPool.signUp(toUsername(email), password, [attributeEmail, attributeFamilyName, attributeName], null,
             function signUpCallback(err, result) {
                 if (!err) {
                     onSuccess(result);

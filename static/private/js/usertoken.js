@@ -6,6 +6,8 @@ var data = {
 var userPool = new AWSCognito.CognitoIdentityServiceProvider.CognitoUserPool(data);
 var cognitoUser = userPool.getCurrentUser();
 var email = '';
+var dataFamilyName = '';
+var datayName = '';
 
 $(document).ready(function() {
   if(cognitoUser != null) {
@@ -25,6 +27,13 @@ $(document).ready(function() {
             for (i = 0; i < result.length; i++) {
               if (result[i].getName() == "email") {
                 email = result[i].getValue();
+                showActiveTabsWhenConnected();
+              }
+              if (result[i].getName() == "dataFamilyName") {
+                dataFamilyName = result[i].getValue();
+              }
+              if (result[i].getName() == "datayName") {
+                datayName = result[i].getValue();
                 showActiveTabsWhenConnected();
               }
             }
