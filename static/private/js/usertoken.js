@@ -33,8 +33,8 @@ $(document).ready(function() {
                 dataFamilyName = result[i].getValue();
               }
               if (result[i].getName() == "dataName") {
-                dataName = result[i].getValue();*/
-              }
+                dataName = result[i].getValue();
+              }*/
             }
           }
         }

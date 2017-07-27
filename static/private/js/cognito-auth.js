@@ -149,7 +149,7 @@ var WebApp = window.WebApp || {};
         var email = $('#emailInputRegister').val();
         var password = $('#passwordInputRegister').val();
         var password2 = $('#password2InputRegister').val();
-        var familyName = $('#familyNameInputRegister').val();
+        var family_name = $('#familyNameInputRegister').val();
         var name = $('#nameInputRegister').val();
 
         var onSuccess = function registerSuccess(result) {
@@ -164,7 +164,8 @@ var WebApp = window.WebApp || {};
         event.preventDefault();
 
         if (password === password2) {
-            register(email, password, onSuccess, onFailure);
+            //register(email, password, onSuccess, onFailure);
+            register(email, password, name, family_name, onSuccess, onFailure);
         } else {
             alert('Passwords do not match');
         }
