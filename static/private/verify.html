@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Serverless Labyrinth</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/aws-cognito-sdk.min.js"></script>
+    <script src="js/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/cognito-auth.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1>The Serverless Labyrinth</h1>
+      </div>
+    </div>
+    <div>
+      <ul class="nav nav-pills">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="disabled connected"><a href="play.html">Play</a></li>
+        <li class="disconnected"><a href="register.html">Register</a></li>
+        <li class="disconnected"><a href="signin.html">Sign in</a></li>
+        <li class="disabled connected"><a onclick="logout();" href="#">Logout</a></li>
+      </ul>
+    </div>
+    <div id="noCognitoMessage" class="configMessage" style="display: none;">
+      <div class="backdrop"></div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">No Cognito User Pool Configured</h3>
+                </div>
+                <div class="panel-body">
+                    <p>There is no user pool configured.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Verify your account</h1>
+            <form id="verifyForm">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="emailInputVerify" type="text" class="form-control" name="email" placeholder="Email" pattern=".*" required>
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-cog"></i></span>
+                <input id="codeInputVerify" type="text" class="form-control" name="password" placeholder="Verification code" pattern=".*" required>
+              </div>
+              <button class="btn btn-primary" type="submit">Verify!</button>
+            </form>
+        </div>
+  </body>
+</html>

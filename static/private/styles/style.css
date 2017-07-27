@@ -1,0 +1,55 @@
+body {
+  max-width: 900px;
+  margin:auto;
+  margin-top: 20px;
+  background-color: #F6F6F6;
+  color: #636363;
+}
+
+.jumbotron {
+  background-color: #A8CACC;
+  border-radius: 20px;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.input-group {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.nav-pills>li>a {
+  color: #E1AC0E;
+  background-color: #EEEEEE;
+  font-weight: bold;
+}
+
+.nav-pills>li>a:hover {
+  color: #636363;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background-color: #A8CACC;
+  color: #636363;
+  font-weight: bold;
+}
+
+.nav-pills>li.disabled>a {
+  color: none;
+  background-color: #F6F6F6;
+  font-weight: normal;
+}
+
+.btn-primary {
+  background-color: #A8CACC;
+  border-color: #636363;
+  color:  #636363;
+}
+
+.btn-primary:hover {
+  background-color: #636363;
+  border-color: #636363;
+  color:  #A8CACC;
+}

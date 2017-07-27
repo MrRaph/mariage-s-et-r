@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Serverless Labyrinth</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/aws-cognito-sdk.min.js"></script>
+    <script src="js/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/cognito-auth.js"></script>
+    <script src="js/usertoken.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/grid.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1>The Serverless Labyrinth</h1>
+      </div>
+    </div>
+    <div>
+      <ul class="nav nav-pills">
+        <li class=""><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Play</a></li>
+        <li class="disconnected"><a href="register.html">Register</a></li>
+        <li class="disconnected"><a href="signin.html">Sign in</a></li>
+        <li class="disabled connected"><a onclick="logout();" href="#">Logout</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div id="play" class="">
+        <h3>The Serverless Labyrinth</h3>
+        <p id="playtext">Click on the grid to turn the piece or on the arrows to move the pawn.</p>
+        <div class="row">
+          <div class="col col-sm-3">
+            <button class="btn btn-primary" onclick="refresh();">
+              <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+              Refresh
+            </button>
+            <div class="checkbox">
+              <label><input type="checkbox" id="autoRefresh" onclick="autoRefreshUpdate();" />Automatic refresh</label>
+            </div>
+            <strong><p>Actual goal: <span id="goalName"></span></p></strong>
+          </div>
+          <div class="col col-sm-9">
+            <center>
+              <canvas id="boardgame" width="525" height="525">
+                <p>You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
+              </canvas>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
