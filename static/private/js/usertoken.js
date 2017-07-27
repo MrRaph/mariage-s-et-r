@@ -29,12 +29,11 @@ $(document).ready(function() {
                 email = result[i].getValue();
                 showActiveTabsWhenConnected();
               }
-              if (result[i].getName() == "dataFamilyName") {
+              /*if (result[i].getName() == "dataFamilyName") {
                 dataFamilyName = result[i].getValue();
               }
-              if (result[i].getName() == "datayName") {
-                dataName = result[i].getValue();
-                showActiveTabsWhenConnected();
+              if (result[i].getName() == "dataName") {
+                dataName = result[i].getValue();*/
               }
             }
           }
