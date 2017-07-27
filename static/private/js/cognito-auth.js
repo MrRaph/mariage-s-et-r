@@ -149,6 +149,8 @@ var WebApp = window.WebApp || {};
         var email = $('#emailInputRegister').val();
         var password = $('#passwordInputRegister').val();
         var password2 = $('#password2InputRegister').val();
+        var familyName = $('#familyNameInputRegister').val();
+        var name = $('#nameInputRegister').val();
 
         var onSuccess = function registerSuccess(result) {
             var cognitoUser = result.user;
