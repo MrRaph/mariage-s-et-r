@@ -7,7 +7,7 @@ var userPool = new AWSCognito.CognitoIdentityServiceProvider.CognitoUserPool(dat
 var cognitoUser = userPool.getCurrentUser();
 var email = '';
 var dataFamilyName = '';
-var datayName = '';
+var dataName = '';
 
 $(document).ready(function() {
   if(cognitoUser != null) {
@@ -33,7 +33,7 @@ $(document).ready(function() {
                 dataFamilyName = result[i].getValue();
               }
               if (result[i].getName() == "datayName") {
-                datayName = result[i].getValue();
+                dataName = result[i].getValue();
                 showActiveTabsWhenConnected();
               }
             }

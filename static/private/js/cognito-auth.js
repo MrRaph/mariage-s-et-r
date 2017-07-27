@@ -53,6 +53,8 @@ var WebApp = window.WebApp || {};
      */
 
     function register(email, password, name, family_name, onSuccess, onFailure) {
+        var attributeList = [];
+
         var dataEmail = {
             Name: 'email',
             Value: email
@@ -69,7 +71,11 @@ var WebApp = window.WebApp || {};
         var attributeName = new AmazonCognitoIdentity.CognitoUserAttribute(dataName);
         var attributeFamilyName = new AmazonCognitoIdentity.CognitoUserAttribute(dataFamilyName);
 
-        userPool.signUp(toUsername(email), password, [attributeEmail, attributeFamilyName, attributeName], null,
+        attributeList.push(attributeEmail);
+        attributeList.push(attributeName);
+        attributeList.push(attributeFamilyName);
+
+        userPool.signUp(toUsername(email), password, attributeList, null,
             function signUpCallback(err, result) {
                 if (!err) {
                     onSuccess(result);
